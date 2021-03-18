@@ -1,0 +1,22 @@
+public class Fruit {
+    private boolean fresh = true;
+
+    public final boolean isFresh() {
+        return fresh;
+    }
+
+    public final void setFresh(final boolean fresh) {
+        this.fresh = fresh;
+    }
+
+    /**
+     * @return поле fresh
+     */
+    @Override
+    public String toString() {
+        return "Fruit{"
+                + "fresh="
+                + fresh
+                + '}';
+    }
+}
