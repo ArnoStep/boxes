@@ -10,5 +10,10 @@ public class Main {
         box.put(box1);
         BoxUtil.printElementFromBoxes(box); // исправно работает
 
+        Box<Apple> srcBox = new Box<>();
+        Box<Object> destBox = new Box<>();
+        BoxUtil.copyFreshFruitFromBoxToBox(srcBox, destBox);
+        System.out.println(destBox.get());
+
     }
 }
